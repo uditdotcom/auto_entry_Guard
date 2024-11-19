@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Smart Parking System</title>
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="../assets/images/logo.webp" alt="Smart Parking Logo" class="logo">
+            <h1>Smart Parking System</h1>
+        </div>
+        <nav>
+            <a href="../index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+            <a href="login.html" class="nav-link"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard-overview">
+            <h2>Dashboard Overview</h2>
+            <div class="overview-cards">
+                <div class="card total-slots">
+                    <h3>Total Slots</h3>
+                    <p id="total-slots-count">50</p>
+                </div>
+                <div class="card available-slots">
+                    <h3>Available Slots</h3>
+                    <p id="available-slots-count">30</p>
+                </div>
+                <div class="card occupied-slots">
+                    <h3>Occupied Slots</h3>
+                    <p id="occupied-slots-count">20</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="parking-status">
+            <h2>Live Parking Slot Status</h2>
+            <div id="slots" class="slots-grid">
+                <!-- Parking slots will be dynamically populated -->
+            </div>
+        </section>
+
+        <section id="vehicle-management">
+            <h2>Vehicle Management</h2>
+            <form class="vehicle-form">
+                <div class="form-group">
+                    <label for="plate-number">License Plate Number</label>
+                    <input type="text" id="plate-number" placeholder="Enter vehicle number..." required>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" id="entry-button" class="btn btn-entry"><i class="fas fa-car-side"></i> Mark Entry</button>
+                    <button type="button" id="exit-button" class="btn btn-exit"><i class="fas fa-sign-out-alt"></i> Mark Exit</button>
+                </div>
+                
+            </form>
+
+            <a href="entry.html">
+                <button id="view-entries-button" class="btn btn-view-entries">
+                    <i class="fas fa-list"></i> View All Entries
+                </button>
+            </a>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smart Parking System. All rights reserved.</p>
+    </footer>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

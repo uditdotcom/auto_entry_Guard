@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header styling for all pages */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo {
+    max-width: 80px;
+    vertical-align: middle;
+}
+
+/* Landing Page Specific Styles */
+body.landing-page {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Header styling for the landing page */
+body.landing-page header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 30px;
+}
+
+body.landing-page h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Landing Page Container */
+body.landing-page .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Landing Page Button styling */
+body.landing-page .button {
+    display: inline-block;
+    background-color: #ffb400;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+body.landing-page .button:hover {
+    background-color: #ff7f00;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+body.landing-page .button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body.landing-page header h1 {
+        font-size: 2rem;
+    }
+
+    body.landing-page .button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body.landing-page header h1 {
+        font-size: 1.5rem;
+    }
+
+    body.landing-page .button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Button Styling for Other Pages */
+.button {
+    padding: 15px 25px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
